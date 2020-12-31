@@ -1,6 +1,7 @@
 import React from 'react'
 import './Home.css'
 import Product from './Product';
+import { Link } from 'react-router-dom';
 
 function Home() {
     return (
@@ -9,7 +10,9 @@ function Home() {
                 <div className='home_title'>
                     <h1>Welcome to Prime Video</h1>
                     <p>Join Prime to watch the latest movies, TV shows and <br/> award-winning Amazon Originals</p>
-                    <button className='home_button'>Start your 30-day free trail</button>
+                    <Link to='/prime'>
+                        <button className='home_button'>Start your 30-day free trail</button>
+                    </Link>
                 </div>
                 <img className='home_image'
                     src="https://m.media-amazon.com/images/G/31/AmazonVideo/2019/1102620_MLP_1440x675_apv189_V3._SY1200_FMJPG_.jpg"

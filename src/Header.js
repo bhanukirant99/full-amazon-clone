@@ -12,7 +12,7 @@ function Header() {
     return (
         <nav className='header'>
             <Link to='/'>
-                    <img className='header_logo' src= 'http://pngimg.com/uploads/amazon/amazon_PNG11.png' alt=""/>
+                <img className='header_logo' src= 'http://pngimg.com/uploads/amazon/amazon_PNG11.png' alt=""/>
             </Link>
             <div className='header_search'>
                 <input type='text' className='header_searchbox'/>
@@ -27,7 +27,7 @@ function Header() {
                 </Link>
             </div>
             <div className='header_nav'>
-                <Link to='/login' className='header_link'>
+                <Link to='/orders' className='header_link'>
                     <div className='header_option'>
                         <span className='header_optionlineone'>Returns</span>
                         <span className='header_optionlinetwo'>& Orders</span>
@@ -35,7 +35,7 @@ function Header() {
                 </Link>
             </div>
             <div className='header_nav'>
-                <Link to='/login' className='header_link'>
+                <Link to='/prime' className='header_link'>
                     <div className='header_option'>
                         <span className='header_optionlineone'>Your</span>
                         <span className='header_optionlinetwo'>Prime</span>
@@ -45,7 +45,7 @@ function Header() {
             <Link to='/checkout' className='header_link'>
                 <div className='header_optionbasket'>
                     <ShoppingBasketIcon /> 
-                        <span className='header_optionlinetwo header_basketcount'>{basket?.length}</span>
+                    <span className='header_optionlinetwo header_basketcount'>{basket?.length}</span>
                 </div>
             </Link>
         </nav>
